@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidades — NEXU</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-mark" href="index.html#inicio" aria-label="NEXU — ir para o início">
+      <img src="./img/logo.png" alt="Logo NEXU" onerror="this.style.display='none'">
+    </a>
+    <div class="brand">NEXU</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="nav-btn" href="index.html#inicio" data-nav="home" title="Início" aria-label="Início">
+          <i class="bi bi-house"></i>
+        </a>
+        <a class="nav-btn" href="index.html#busca" data-nav="search" title="Pesquisar" aria-label="Pesquisar">
+          <i class="bi bi-search"></i>
+        </a>
+        <a class="nav-btn" href="comunidades.html" data-nav="communities" title="Comunidades" aria-label="Comunidades">
+          <i class="bi bi-people"></i>
+        </a>
+        <a class="nav-btn" href="mensagens.html" data-nav="messages" title="Mensagens" aria-label="Mensagens">
+          <i class="bi bi-chat-dots"></i>
+        </a>
+        <a class="nav-btn plus" href="index.html#criar" data-nav="create" title="Criar publicação" aria-label="Criar publicação">
+          <i class="bi bi-plus-lg"></i>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a class="nav-btn" href="index.html#config" data-nav="settings" title="Configurações" aria-label="Configurações">
+          <i class="bi bi-gear"></i>
+        </a>
+        <div class="avatar avatar-user" title="Seu perfil">LC</div>
+      </div>
+    </aside>
+
+    <aside class="recommendations">
+      <h3>Perfis recomendados</h3>
+
+      <div class="profile">
+        <div class="avatar">MS</div>
+        <div class="profile-info">
+          <strong>Marina Souza</strong>
+          <span>@marinasouza</span>
+          <button class="follow-btn outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">RA</div>
+        <div class="profile-info">
+          <strong>Rafael Alves</strong>
+          <span>@rafaelalves</span>
+          <button class="follow-btn outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">BC</div>
+        <div class="profile-info">
+          <strong>Beatriz Costa</strong>
+          <span>@beatrizcosta</span>
+          <button class="follow-btn outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <a class="more-link" href="index.html#busca">Encontrar mais pessoas →</a>
+    </aside>
+
+    <main class="content">
+      <!-- BUSCA -->
+      <section id="page-search" class="page">
+        <h2>Busca</h2>
+        <form class="search-form" id="searchForm" role="search">
+          <i class="bi bi-search"></i>
+          <input id="searchInput" type="search" placeholder="Digite sua busca" aria-label="Pesquisar">
+        </form>
+        <div class="search-tabs" role="tablist">
+          <button class="search-tab plain active" role="tab">Tudo</button>
+          <button class="search-tab plain" role="tab">Perfis</button>
+          <button class="search-tab plain" role="tab">Publicações</button>
+        </div>
+        
+        <div class="search-help">
+          <h3>Uma busca diferente pode ajudar</h3>
+          <p>Confira a escrita dos termos. Use palavras mais simples ou busque pelo nome de um perfil.</p>
+          <div class="suggestions">
+            <button class="outline secondary" data-term="Fotografia">Fotografia</button>
+            <button class="outline secondary" data-term="Criatividade">Criatividade</button>
+            <button class="outline secondary" data-term="Tecnologia">Tecnologia</button>
+          </div>
+        </div>
+      </section>
+</main>
+
+
+    <aside class="news">
+      <h3>Últimas notícias</h3>
+
+      <article class="news-item">
+        <span>Tecnologia</span>
+        <h4>Como as comunidades estão transformando a internet</h4>
+        <small>Rede NEXU · 12 h</small>
+      </article>
+
+      <article class="news-item">
+        <span>Inovação</span>
+        <h4>Criatividade que aproxima novas formas de compartilhar ideias</h4>
+        <small>Rede NEXU · 14 h</small>
+      </article>
+
+      <article class="news-item">
+        <span>Sociedade</span>
+        <h4>O valor de uma boa conversa em um mundo conectado</h4>
+        <small>Rede NEXU · 16 h</small>
+      </article>
+
+      <footer>Sobre · Privacidade · Termos · Ajuda<br><span>© 2026 NEXU</span></footer>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
