@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mensagens — NEXU</title>
+  <link rel="icon" type="image/png" href="./logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand-mark" href="index.html#inicio" aria-label="NEXU — ir para o início">
+      <img src="./logo.png" alt="Logo NEXU" onerror="this.style.display='none'">
+    </a>
+    <div class="brand">NEXU</div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar">
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="nav-btn" href="index.html#inicio" data-nav="home" title="Início" aria-label="Início">
+          <i class="bi bi-house"></i>
+        </a>
+        <a class="nav-btn" href="index.html#busca" data-nav="search" title="Pesquisar" aria-label="Pesquisar">
+          <i class="bi bi-search"></i>
+        </a>
+        <a class="nav-btn" href="comunidades.html" data-nav="communities" title="Comunidades" aria-label="Comunidades">
+          <i class="bi bi-people"></i>
+        </a>
+        <a class="nav-btn" href="mensagens.html" data-nav="messages" title="Mensagens" aria-label="Mensagens">
+          <i class="bi bi-chat-dots"></i>
+        </a>
+        <a class="nav-btn plus" href="index.html#criar" data-nav="create" title="Criar publicação" aria-label="Criar publicação">
+          <i class="bi bi-plus-lg"></i>
+        </a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <a class="nav-btn" href="index.html#config" data-nav="settings" title="Configurações" aria-label="Configurações">
+          <i class="bi bi-gear"></i>
+        </a>
+        <div class="avatar avatar-user" title="Seu perfil">LC</div>
+      </div>
+    </aside>
+
+    <aside class="recommendations">
+      <h3>Perfis recomendados</h3>
+
+      <div class="profile">
+        <div class="avatar">MS</div>
+        <div class="profile-info">
+          <strong>Marina Souza</strong>
+          <span>@marinasouza</span>
+          <button class="follow-btn outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">RA</div>
+        <div class="profile-info">
+          <strong>Rafael Alves</strong>
+          <span>@rafaelalves</span>
+          <button class="follow-btn outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <div class="profile">
+        <div class="avatar">BC</div>
+        <div class="profile-info">
+          <strong>Beatriz Costa</strong>
+          <span>@beatrizcosta</span>
+          <button class="follow-btn outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <a class="more-link" href="index.html#busca">Encontrar mais pessoas →</a>
+    </aside>
+
+    <main class="content">
+      <section id="page-messages" class="page active-page">
+        <h2>Mensagens</h2>
+
+        <form class="search-form" id="messageSearch" role="search" onsubmit="return false">
+          <i class="bi bi-search"></i>
+          <input id="messageSearchInput" type="search" placeholder="Buscar conversas" aria-label="Buscar conversas">
+        </form>
+
+        <div class="message-list">
+          <article class="post message-item">
+            <div class="avatar">MS</div>
+            <div class="post-body">
+              <div class="post-head">
+                <div><strong>Marina Souza</strong><span>Hoje, 14:32</span></div>
+                <span class="message-status" title="Não lida">●</span>
+              </div>
+              <p>Oi! Tudo bem? Vi sua publicação e queria conversar sobre a ideia.</p>
+              <textarea name="text" rows="10" cols="50"></textarea>
+              <input type="file">
+            </div>
+          </article>
+
+          <article class="post message-item">
+            <div class="avatar">RA</div>
+            <div class="post-body">
+              <div class="post-head">
+                <div><strong>Rafael Alves</strong><span>Hoje, 11:08</span></div>
+              </div>
+              <p>Obrigado por compartilhar aquele projeto. Ficou muito interessante!</p>
+            </div>
+          </article>
+
+          <article class="post message-item">
+            <div class="avatar">BC</div>
+            <div class="post-body">
+              <div class="post-head">
+                <div><strong>Beatriz Costa</strong><span>Ontem</span></div>
+              </div>
+              <p>Vamos combinar de trocar algumas referências esta semana?</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="placeholder-card" id="emptyMessages" hidden>
+          <h3>Nenhuma conversa encontrada</h3>
+          <p>Tente buscar por outro nome.</p>
+        </div>
+      </section>
+    </main>
+
+    <aside class="news">
+      <h3>Últimas notícias</h3>
+
+      <article class="news-item">
+        <span>Tecnologia</span>
+        <h4>Como as comunidades estão transformando a internet</h4>
+        <small>Rede NEXU · 12 h</small>
+      </article>
+
+      <article class="news-item">
+        <span>Inovação</span>
+        <h4>Criatividade que aproxima novas formas de compartilhar ideias</h4>
+        <small>Rede NEXU · 14 h</small>
+      </article>
+
+      <article class="news-item">
+        <span>Sociedade</span>
+        <h4>O valor de uma boa conversa em um mundo conectado</h4>
+        <small>Rede NEXU · 16 h</small>
+      </article>
+
+      <footer>Sobre · Privacidade · Termos · Ajuda<br><span>© 2026 NEXU</span></footer>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
