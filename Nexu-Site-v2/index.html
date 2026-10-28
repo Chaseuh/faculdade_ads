@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" conteudo="width=device-width, initial-scale=1.0">
+  <title>NEXU — Rede Social</title>
+  <link rel="icon" type="image/png" href="./img/logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="barra-superior">
+    <a class="icone-marca" href="index.html#inicio" aria-label="NEXU — ir para o início">
+      <img src="./img/logo.png" alt="Logo NEXU" onerror="this.style.display='none'">
+    </a>
+    <!-- <div class="marca">NEXU</div> -->
+    <titulo-principal class="marca">NEXU</titulo-principal>
+  </header>
+
+  <div class="estrutura">
+    <aside class="barra-lateral">
+      <nav class="navegacao-principal" aria-label="Navegação principal">
+        <a class="botao-navegacao" href="index.html#inicio" data-nav="home" title="Início" aria-label="Início">
+          <i class="bi bi-house"></i>
+        </a>
+        <a class="botao-navegacao" href="busca.html" data-nav="search" title="Pesquisar" aria-label="Pesquisar">
+          <i class="bi bi-search"></i>
+        </a>
+        <a class="botao-navegacao" href="comunidades.html" data-nav="communities" title="Comunidades"
+          aria-label="Comunidades">
+          <i class="bi bi-people"></i>
+        </a>
+        <a class="botao-navegacao" href="mensagens.html" data-nav="messages" title="Mensagens" aria-label="Mensagens">
+          <i class="bi bi-chat-dots"></i>
+        </a>
+        <a class="botao-navegacao plus" href="criar-publicacao.html" data-nav="create" title="Criar publicação"
+          aria-label="Criar publicação">
+          <i class="bi bi-plus-lg"></i>
+        </a>
+      </nav>
+
+      <div class="base-lateral">
+        <a class="botao-navegacao" href="configuracoes.html" data-nav="settings" title="Configurações"
+          aria-label="Configurações">
+          <i class="bi bi-gear"></i>
+        </a>
+        <div class="avatar avatar-usuario" title="Seu perfil">LC</div>
+      </div>
+    </aside>
+
+    <aside class="recomendacoes">
+      <h3>Perfis recomendados</h3>
+
+      <div class="perfil-recomendado">
+        <div class="avatar">MS</div>
+        <div class="informacoes-perfil">
+          <strong>Marina Souza</strong>
+          <span>@marinasouza</span>
+          <button class="botao-seguir outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <div class="perfil-recomendado">
+        <div class="avatar">RA</div>
+        <div class="informacoes-perfil">
+          <strong>Rafael Alves</strong>
+          <span>@rafaelalves</span>
+          <button class="botao-seguir outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <div class="perfil-recomendado">
+        <div class="avatar">BC</div>
+        <div class="informacoes-perfil">
+          <strong>Beatriz Costa</strong>
+          <span>@beatrizcosta</span>
+          <button class="botao-seguir outline secondary">Seguir</button>
+        </div>
+      </div>
+
+      <a class="link-mais" href="busca.html">Encontrar mais pessoas →</a>
+    </aside>
+
+    <main class="conteudo">
+      <!-- INÍCIO -->
+      <section id="page-home" class="pagina pagina-ativa">
+        <h2>Início</h2>
+
+        <div class="abas" role="tablist">
+          <button class="aba plain active" role="tabpanel" aria-selected="true">Seguindo</button>
+          <button class="aba plain" role="aba" aria-selected="false">Para você</button>
+        </div>
+
+        <!-- POSTS -->
+        <article class="publicacao">
+          <div class="avatar">MS</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <div>
+                <strong>Marina Souza</strong>
+                <span>@marinasouza · há 12 h</span>
+              </div>
+              <button class="mais-opcoes plain" aria-label="Mais opções">•••</button>
+            </div>
+            <p>Às vezes, a melhor ideia nasce de uma conversa sem pressa. Como a de produzir um bolo. <em>O que inspira
+                vocês hoje?</em></p>
+            <img class="imagem-publicacao"
+              src="https://areademulher.r7.com/wp-content/uploads/2020/04/como-fazer-bolo-receitas-simples-e-melhores-dicas-para-um-bolo-fofinho-1.jpg"
+              alt="Bolo fofinho sobre uma mesa" loading="lazy">
+            <div class="acoes-publicacao">
+              <button class="curtir plain" aria-pressed="false">♡ <span>12</span></button>
+              <button class="plain">◯ <span>4</span></button>
+              <button class="plain">↗ <span>Compartilhar</span></button>
+            </div>
+          </div>
+        </article>
+        <article class="publicacao">
+          <div class="avatar">BC</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>Beatriz Carvalho</strong>
+              <small>• há 3 horas</small>
+            </div>
+
+            <p>Finalmente consegui desenvolver meu primeiro banco de dados relacional para um projeto de estudos!</p>
+
+            <p>Pratiquei comandos SQL, criação de tabelas, chaves primárias e relacionamentos. O próximo passo é
+              conectar o
+              banco a uma aplicação web.</p>
+            <div class="area-video">
+              <img class="imagem-publicacao" src="./img/programando.png" alt="programando" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">RA</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <div>
+                <strong>Rafael Alves</strong>
+                <span>@rafaelalves · há 1 d</span>
+              </div>
+              <button class="mais-opcoes plain" aria-label="Mais opções">•••</button>
+            </div>
+            <p>🤝 Meu primeiro projeto colaborativo usando Git e GitHub.Trabalhar com outras pessoas em um mesmo
+              repositório me ajudou a entender melhor branches, commits, pull requests e resolução de conflitos.
+            <p>Também aprendi que explicar uma decisão técnica com clareza é tão importante quanto implementá-la.</p>
+            <p>Quero continuar contribuindo com projetos colaborativos e aprender mais sobre revisão de código.</p>
+            <p>#Git #GitHub</p>
+            <div class="acoes-publicacao">
+              <button class="curtir plain" aria-pressed="false">♡ <span>8</span></button>
+              <button class="plain">◯ <span>3</span></button>
+              <button class="plain">↗ <span>Compartilhar</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">HB</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>Celso Trindade</strong>
+              <small>• hoje</small>
+            </div>
+            <p>Nos meus momentos livres, gosto de jogar jogos de estratégia. Percebi que várias situações exigem
+              planejamento, análise de possibilidades e tomada de decisões — habilidades que também utilizo na
+              programação.</p>
+            <p>Ultimamente, tenho tentado aplicar esse raciocínio na resolução de problemas com algoritmos.</p>
+            <div class="area-video">
+              <img class="imagem-publicacao" src="./img/jogo.png" alt="programando" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">RM</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>Rafael Mendes</strong>
+              <small>• há 2 horas</small>
+            </div>
+
+            <p>🏆 Argentina tricampeã mundial!</p>
+
+            <p>
+              Em uma das finais mais emocionantes da história do futebol,
+              a Argentina venceu a França nos pênaltis e conquistou a
+              Copa do Mundo de 2022.
+            </p>
+
+            <p>
+              Messi, Emiliano Martínez e toda a equipe fizeram parte
+              de uma conquista histórica para o futebol argentino. 🇦🇷
+            </p>
+
+            <img src="./img/argentina-campea-2022.jpg"
+              alt="Seleção argentina comemorando o título da Copa do Mundo de 2022" loading="lazy">
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">LC</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>Lucas Carvalho</strong>
+              <small>• há 3 horas</small>
+            </div>
+
+            <p>💻 Meu portfólio está evoluindo!</p>
+
+            <p>
+              Estou organizando meus projetos de desenvolvimento web
+              para apresentar minhas habilidades em HTML, CSS,
+              JavaScript e lógica de programação.
+            </p>
+
+            <p>
+              Meu objetivo é conquistar minha primeira oportunidade
+              na área de tecnologia e continuar aprendendo com
+              profissionais mais experientes.
+            </p>
+
+            <p>
+              Qual projeto vocês recomendam destacar em um portfólio
+              para uma vaga de desenvolvedor júnior?
+            </p>
+
+            <img src="./img/portfolio-desenvolvimento.jpg"
+              alt="Portfólio de projetos de desenvolvimento de software em um computador" loading="lazy">
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">MC</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>Mariana Costa</strong>
+              <small>• hoje</small>
+            </div>
+
+            <p>Comecei a estudar Python recentemente e estou gostando da simplicidade da linguagem.</p>
+
+            <p>Meu objetivo é desenvolver pequenos projetos para praticar lógica de programação, funções e estruturas de
+              dados.</p>
+
+            <div class="area-video">
+              <img class="imagem-publicacao" src="./img/programando3.png" alt="programando" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">RF</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>Rafael Ferreira</strong>
+              <small>• ontem</small>
+            </div>
+
+            <p>Hoje consegui finalizar meu primeiro projeto utilizando HTML e CSS: uma página de apresentação pessoal.
+            </p>
+
+            <p>Aprendi bastante sobre organização do código, estrutura de páginas e estilização. Agora quero estudar
+              JavaScript para adicionar interatividade.</p>
+
+            <div class="area-video">
+              <img class="imagem-publicacao" src="./img/teclando2.png" alt="programando" loading="lazy">
+            </div>
+          </div>
+        </article>
+
+
+        <article class="publicacao">
+          <div class="avatar">RA</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <div>
+                <strong>Moreira Raffa</strong>
+                <span>@moreiraraffa888 · há 1 d</span>
+              </div>
+              <button class="mais-opcoes plain" aria-label="Mais opções">•••</button>
+            </div>
+            <p>Gosto de rever partidas antigas de futebol, ver esse primeiro gol do Pelé mostra como o Brasil é
+              diferente!</p>
+            <div class="area-video">
+              <iframe src="https://www.youtube.com/embed/L5iQ7WghEuM?controls=0" title="Vídeo do YouTube" loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <p><a href="https://youtu.be/L5iQ7WghEuM" target="_blank" rel="noopener">Assistir no YouTube</a></p>
+            <div class="acoes-publicacao">
+              <button class="curtir plain" aria-pressed="false">♡ <span>8</span></button>
+              <button class="plain">◯ <span>3</span></button>
+              <button class="plain">↗ <span>Compartilhar</span></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">JM</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>João Martins</strong>
+              <small>• lembrança de 2024</small>
+            </div>
+
+            <p>⚽🏆 FUTEBOL E GRANDES CONQUISTAS!</p>
+
+            <p>Você acompanhou o futebol internacional em 2024? O Real Madrid encerrou o ano conquistando a Copa
+              Intercontinental da FIFA, com uma vitória por 3 a 0 sobre o Pachuca.</p>
+
+            <p>Mbappé, Rodrygo e Vinícius Júnior marcaram na decisão. Uma final que entrou para a história do clube! ⚪🔥
+            </p>
+
+            <img src="./img/real-madrid-2024.jpg" alt="Imagem ilustrativa de um troféu de futebol" loading="lazy">
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">RC</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <strong>Ricardo Costa</strong>
+              <small>• lembrança de 2010</small>
+            </div>
+
+            <p>🗓️ #TBT — VOCÊ LEMBRA DE 2010?</p>
+
+            <p>Na Mega da Virada daquele ano, as dezenas sorteadas foram 02, 10, 34, 37, 43 e 50!</p>
+
+            <p>O prêmio principal foi dividido entre quatro apostas ganhadoras. Um registro curioso da história das
+              loterias brasileiras! 🇧🇷</p>
+
+            <img src="./img/mega-2010.jpg" alt="Imagem ilustrativa de um calendário de 2010 e números" loading="lazy">
+          </div>
+        </article>
+
+        <article class="publicacao">
+          <div class="avatar">RA</div>
+          <div class="corpo-publicacao">
+            <div class="cabecalho-publicacao">
+              <div>
+                <strong>Tropan</strong>
+                <span>@tropan · há 1 d</span>
+              </div>
+              <button class="mais-opcoes plain" aria-label="Mais opções">•••</button>
+            </div>
+            <p>Aprender Cobol vai ser um dos meus próximos passos na programação. Tive a curiosidade de mexer na
+              aplicação da empresa e acabei me interessando. Alguém que já está na área tem alguma dica pra começar?</p>
+            <div class="area-video">
+              <img class="imagem-publicacao" src="./img/programando2.png" alt="programando" loading="lazy">
+            </div>
+            <div class="acoes-publicacao">
+              <button class="curtir plain" aria-pressed="false">♡ <span>8</span></button>
+              <button class="plain">◯ <span>3</span></button>
+              <button class="plain">↗ <span>Compartilhar</span></button>
+            </div>
+          </div>
+        </article>
+
+        <section class="fim-feed">
+          <div class="confirmacao">✓</div>
+          <h3>Você chegou ao fim por agora</h3>
+          <p>Você viu todas as publicações disponíveis dos perfis que segue.<br>Volte mais tarde ou descubra novas
+            conexões.</p>
+          <div class="acoes-finais">
+            <a role="button" class="link-principal" href="busca.html">Encontrar perfis</a>
+            <button class="secondary voltar-topo">↟ Voltar ao topo</button>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <aside class="noticias">
+      <h3>Últimas notícias</h3>
+
+      <article class="item-noticia">
+        <span>Tecnologia</span>
+        <h4>Como as comunidades estão transformando a internet</h4>
+        <small>Rede NEXU · 12 h</small>
+      </article>
+
+      <article class="item-noticia">
+        <span>Inovação</span>
+        <h4>Criatividade que aproxima novas formas de compartilhar ideias</h4>
+        <small>Rede NEXU · 14 h</small>
+      </article>
+
+      <article class="item-noticia">
+        <span>Sociedade</span>
+        <h4>O valor de uma boa conversa em um mundo conectado</h4>
+        <small>Rede NEXU · 16 h</small>
+      </article>
+
+      <footer>Sobre · Privacidade · Termos · Ajuda<br><span>© 2026 NEXU</span></footer>
+    </aside>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

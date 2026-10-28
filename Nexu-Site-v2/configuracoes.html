@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Configura&ccedil;&otilde;es &mdash; NEXU
+  </title>
+  <link href="./img/logo.png" rel="icon" type="image/png"/>
+  <link href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css" rel="stylesheet"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet"/>
+  <link href="style.css" rel="stylesheet"/>
+ </head>
+ <body>
+  <header class="barra-superior">
+   <a aria-label="NEXU &mdash; in&iacute;cio" class="icone-marca" href="index.html">
+    <img alt="Logo NEXU" onerror="this.style.display='none'" src="./img/logo.png"/>
+   </a>
+   <a class="marca" href="index.html">
+    NEXU
+   </a>
+  </header>
+  <div class="estrutura">
+   <aside class="barra-lateral">
+    <nav aria-label="Navega&ccedil;&atilde;o principal" class="navegacao-principal">
+     <a aria-label="In&iacute;cio" class="botao-navegacao" data-nav="home" href="index.html" title="In&iacute;cio">
+      <i class="bi bi-house">
+      </i>
+     </a>
+     <a aria-label="Pesquisar" class="botao-navegacao" data-nav="search" href="busca.html" title="Pesquisar">
+      <i class="bi bi-search">
+      </i>
+     </a>
+     <a aria-label="Comunidades" class="botao-navegacao" data-nav="communities" href="comunidades.html" title="Comunidades">
+      <i class="bi bi-people">
+      </i>
+     </a>
+     <a aria-label="Mensagens" class="botao-navegacao" data-nav="messages" href="mensagens.html" title="Mensagens">
+      <i class="bi bi-chat-dots">
+      </i>
+     </a>
+     <a aria-label="Criar publica&ccedil;&atilde;o" class="botao-navegacao botao-mais" data-nav="create" href="criar-publicacao.html" title="Criar publica&ccedil;&atilde;o">
+      <i class="bi bi-plus-lg">
+      </i>
+     </a>
+    </nav>
+    <div class="base-lateral">
+     <a aria-label="Configura&ccedil;&otilde;es" class="botao-navegacao ativo" href="configuracoes.html" title="Configura&ccedil;&otilde;es">
+      <i class="bi bi-gear">
+      </i>
+     </a>
+     <div class="avatar avatar-usuario" title="Seu perfil">
+      LC
+     </div>
+    </div>
+   </aside>
+   <aside class="recomendacoes">
+    <h3>
+     Perfis recomendados
+    </h3>
+    <div class="perfil-recomendado">
+     <div class="avatar">
+      MS
+     </div>
+     <div class="informacoes-perfil">
+      <strong>
+       Marina Souza
+      </strong>
+      <span>
+       @marinasouza
+      </span>
+      <button class="botao-seguir outline secondary">
+       Seguir
+      </button>
+     </div>
+    </div>
+    <div class="perfil-recomendado">
+     <div class="avatar">
+      RA
+     </div>
+     <div class="informacoes-perfil">
+      <strong>
+       Rafael Alves
+      </strong>
+      <span>
+       @rafaelalves
+      </span>
+      <button class="botao-seguir outline secondary">
+       Seguir
+      </button>
+     </div>
+    </div>
+    <div class="perfil-recomendado">
+     <div class="avatar">
+      BC
+     </div>
+     <div class="informacoes-perfil">
+      <strong>
+       Beatriz Costa
+      </strong>
+      <span>
+       @beatrizcosta
+      </span>
+      <button class="botao-seguir outline secondary">
+       Seguir
+      </button>
+     </div>
+    </div>
+    <a class="link-mais" href="busca.html">
+     Encontrar mais pessoas &rarr;
+    </a>
+   </aside>
+   <main class="conteudo">
+    <section class="pagina pagina-ativa">
+     <h2>
+      Configura&ccedil;&otilde;es
+     </h2>
+     <p class="texto-suave">
+      Personalize sua experi&ecirc;ncia na NEXU. As altera&ccedil;&otilde;es abaixo s&atilde;o aplicadas nesta demonstra&ccedil;&atilde;o.
+     </p>
+     <form class="formulario-configuracoes" id="formularioConfiguracoes">
+      <section class="grupo-configuracao">
+       <h3>
+        Perfil
+       </h3>
+       <label for="nomePerfil">
+        Nome de exibi&ccedil;&atilde;o
+       </label>
+       <input id="nomePerfil" maxlength="60" name="nomePerfil" value="Lucas Costa"/>
+       <label for="bioPerfil">
+        Sobre voc&ecirc;
+       </label>
+       <textarea id="bioPerfil" maxlength="180" placeholder="Conte um pouco sobre voc&ecirc;" rows="3">Gosto de tecnologia, criatividade e boas conversas.</textarea>
+      </section>
+      <section class="grupo-configuracao">
+       <h3>
+        Apar&ecirc;ncia
+       </h3>
+       <label for="temaSite">
+        Tema
+       </label>
+       <select id="temaSite">
+        <option value="dark">
+         Escuro
+        </option>
+        <option value="light">
+         Claro
+        </option>
+       </select>
+      </section>
+      <section class="grupo-configuracao">
+       <h3>
+        Privacidade e notifica&ccedil;&otilde;es
+       </h3>
+       <label class="opcao-configuracao">
+        <input checked="" id="notificacoes" type="checkbox"/>
+        Receber notifica&ccedil;&otilde;es de novas mensagens
+       </label>
+       <label class="opcao-configuracao">
+        <input checked="" id="perfilPublico" type="checkbox"/>
+        Permitir que outras pessoas encontrem meu perfil
+       </label>
+       <label class="opcao-configuracao">
+        <input checked="" id="previews" type="checkbox"/>
+        Mostrar pr&eacute;vias de imagens nas publica&ccedil;&otilde;es
+       </label>
+      </section>
+      <div class="acoes-formulario">
+       <span id="statusConfiguracoes" role="status">
+       </span>
+       <button type="submit">
+        Salvar configura&ccedil;&otilde;es
+       </button>
+      </div>
+     </form>
+    </section>
+   </main>
+   <aside class="noticias">
+    <h3>
+     &Uacute;ltimas not&iacute;cias
+    </h3>
+    <article class="item-noticia">
+     <span>
+      Tecnologia
+     </span>
+     <h4>
+      Como as comunidades est&atilde;o transformando a internet
+     </h4>
+     <small>
+      Rede NEXU &middot; 12 h
+     </small>
+    </article>
+    <article class="item-noticia">
+     <span>
+      Inova&ccedil;&atilde;o
+     </span>
+     <h4>
+      Criatividade que aproxima novas formas de compartilhar ideias
+     </h4>
+     <small>
+      Rede NEXU &middot; 14 h
+     </small>
+    </article>
+    <article class="item-noticia">
+     <span>
+      Sociedade
+     </span>
+     <h4>
+      O valor de uma boa conversa em um mundo conectado
+     </h4>
+     <small>
+      Rede NEXU &middot; 16 h
+     </small>
+    </article>
+    <footer>
+     Sobre &middot; Privacidade &middot; Termos &middot; Ajuda
+     <br/>
+     <span>
+      &copy; 2026 NEXU
+     </span>
+    </footer>
+   </aside>
+  </div>
+  <script src="script.js">
+  </script>
+ </body>
+</html>
